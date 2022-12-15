@@ -22,7 +22,7 @@ class Hidangan extends CI_Controller
       // panggil model "Mhidangan"
       $this->load->model("Mhidangan", "hdg", TRUE);
       // panggil view "add_hidangan"
-      $this->load->view("add_hidangan");
+      $this->load->view("admin/add_hidangan");
    }
 
    // buat fungsi simpan data hidangan

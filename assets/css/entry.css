@@ -1,0 +1,233 @@
+:root
+{
+    --putih : #FFFFFF;
+    --ungu : #FFCCCC;
+    --padding_custom : 10px;
+    --kosong : 0;
+    --border_custom : 1px solid #333333;
+}
+table
+{
+    width: 100%; 
+    border-collapse:collapse;
+}
+th,td
+{
+    padding:var(--padding_custom); 
+    border: var(--border_custom);
+
+}
+.bg_putih
+{
+    background-color: var(--putih);
+}
+.bg_ungu
+{
+    background-color: var(--ungu);
+}
+.area-aksi 
+{
+    display: flex;
+    width: calc(100%-20px);
+
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-end; */
+}
+.btn-edit
+{
+    width: 48%;
+    margin-right: 2%;
+    background-color: #333333;
+    border: 1px solid #333333;
+    outline: 0;
+    color: var(--putih);
+    border-radius: 5px;
+    padding: var(--padding_custom);
+}
+.btn-hapus
+{
+    width: 48%;
+    margin-left: 1%;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    outline: 0;
+    color: var(--putih);
+    border-radius: 5px;
+    padding: var(--padding_custom);
+}
+.area-tombol 
+{
+
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end;
+    height: 300px;
+    border: var(--border_custom); */
+    margin-bottom: var(--padding_custom);
+}
+
+.btn-primary
+{
+    background-color: #116530;
+	padding: 1%;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.btn-primary:hover
+{
+    background: var(--ungu);
+    color: #333333;
+}
+.btn-secondary
+{
+    background-color: #46B5D1;
+	padding: 1%;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+/* membuat grid */
+/* setting grid-area */
+.item-foto 
+{
+    /* settup grid area */
+    grid-area: foto;
+    /* perataan objek secara horizontal */
+    /* justify-self: center; */
+    /* perataan objek secara vertikal */
+    /* align-self: center; */
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    /* background: #ff0000; */
+    border: var(--border_custom);
+    padding: var(--padding_custom);
+    border-radius: var(--padding_custom);
+    margin: 0px 25px 0px 25px;
+
+}
+.item-label-1,.item-input-1,
+.item-label-2,.item-input-2,
+.item-label-3,.item-input-3,
+.item-label-4,.item-input-4,
+.item-label-5,.item-label-6
+{
+    height: 40px;
+    display: grid;
+    align-self: center;
+    /* align-items: center; */
+
+}
+.item-label-1
+{
+    grid-area: label1;
+    /* background: #ff0000; */
+}
+.item-input-1
+{
+    grid-area: input1;
+    /* background: #ff0000; */
+}
+.item-label-2
+{
+    grid-area: label2;
+}
+.item-input-2
+{
+    grid-area: input2;
+}
+.item-label-3
+{
+    grid-area: label3;
+}
+.item-input-3
+{
+    grid-area: input3;
+}
+.item-label-4
+{
+    grid-area: label4;
+}
+.item-input-4
+{
+    grid-area: input4;
+}
+.item-label-5
+{
+    grid-area: label5;
+}
+.item-input-5
+{
+    grid-area: input5;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.item-label-6
+{
+    grid-area: label6;
+}
+.item-input-6
+{
+    grid-area: input6;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+/* buat area inti grid */
+.container-grid
+{
+    display: grid;
+    /* buat template grid */
+    grid-template-areas: 
+    'foto foto label1 input1 input1'
+    'foto foto label2 input2 input2'
+    'foto foto label3 input3 input3'
+    'foto foto label4 input4 input4'
+    'foto foto label5 input5 input5'
+    'foto foto label6 input6 input6';
+    grid-gap: var(--padding_custom);
+}
+.text-object
+{
+    height: 30px;
+    width: 95%;
+    border: var(--border_custom);
+    border-radius: 30px;
+    padding: var(--kosong) var(--padding_custom);
+    outline: 0;
+}
+.text-object,.select-object
+{
+    height: 30px;
+    /* width: 95%; */
+    border: var(--border_custom);
+    border-radius: 30px;
+    padding: var(--kosong) var(--padding_custom);
+    outline: 0;
+}
+.text-object:focus,.text-object:hover,.select-object:active
+{
+    border: var(--kosong);
+    box-shadow: var(--kosong) var(--kosong) var(--padding_custom) #ff0000;
+}
+.select-object
+{
+    /* width: 99%; */
+    background: var(--putih);
+}
+.image-upload 
+{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.eror-info
+{
+    font-size: 12px;
+    color: #ff0000;
+    margin-top: 5px;
+    display: none;
+}
