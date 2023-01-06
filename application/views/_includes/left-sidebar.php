@@ -9,6 +9,12 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav flex-column">
                 <li class="nav-divider">
+                    Menu
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo site_url('') ?>" class="nav-link <?php echo $uri == '' | $uri === 'dashboard' ? 'active' : '' ?>"><i class="fa fa-fw fa-chart-area"></i>Dashboard</a>
+                </li>
+                <li class="nav-divider">
                     Master
                 </li>
                 <li class="nav-item">
