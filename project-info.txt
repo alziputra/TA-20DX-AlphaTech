@@ -1,0 +1,20 @@
+1. Admin Login 
+
+url         : localhost/TA-20Dx-AlphaTech/admin/
+Username    : admin
+Password    : admin
+
+2. Customer Login
+
+url         : http://localhost/TA-20Dx-AlphaTech/
+Username    : alziputra
+Password    : password
+
+
+3. Recomendasi PHP Versi 7.4.12
+
+
+4. Jangan ubah nama folder proyek tanpa memperbarui $config['base_url']
+
+
+
